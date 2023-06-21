@@ -101,8 +101,37 @@ for (let i = 0; i < 2; i++) {
         console.log('done');
         personalMovieDB.movies[a] = b;
     }
-    
 }
+
+// let i = 0;
+// while (i < 2) {
+//     const a = prompt('Один из последних промотренных фильмов ?', ''),
+//           b = prompt('На сколько оцените фильм ?', '');
+//     if (a == false || a === null || a.length > 50 || b == false || b === null) {
+//         console.log('error');
+//         i--;
+//     }  else {
+//         console.log('done');
+//         personalMovieDB.movies[a] = b; 
+//     }
+//     i++;
+// }
+
+// let i = 0;
+// do {
+//     const a = prompt('Один из последних промотренных фильмов ?', ''),
+//           b = prompt('На сколько оцените фильм ?', '');
+//     if (a == false || a === null || a.length > 50 || b == false || b === null) {
+//         console.log('error');
+//         i--;
+//     }  else {
+//         console.log('done');
+//         personalMovieDB.movies[a] = b; 
+//     }
+//     i++;
+// } 
+// while (i < 2);
+
 console.log(personalMovieDB);
 
 if (personalMovieDB.count < 10) {
