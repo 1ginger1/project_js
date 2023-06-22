@@ -144,8 +144,29 @@ if (personalMovieDB.count < 10) {
     console.log('Произошла ошибка');
 }
 
+function enterName(name) {
+    return `Привет, ${name} !`;
+}
 
+console.log(enterName('Антон'));
 
+function returnNeighboringNumbers(number) {
+    arr = [number - 1, number, number + 1];
+    return arr;
+}
 
+console.log(returnNeighboringNumbers(5));
 
+function getMathResult(base, count) {
+    if (typeof(count) === 'string' || count <= 0) {
+        return base;
+    } else {
+        let result = ''
+        for (let i = 1; i <= count; i++) {
+            result += `${base * i}---`;
+        };
+        return console.log(result.slice(0, -3));
+    }
+}
 
+getMathResult(5, 3);
